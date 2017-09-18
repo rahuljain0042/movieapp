@@ -1,0 +1,65 @@
+<!-- <nav class="navbar navbar-light" style= " background-color: #e3f2fd;">
+ <form class="form-inline">
+ <a class="navbar-brand" href="#">Popcorn Time</a>
+ <input type="text" placeholder ="Enter Movie" name="movie" [(ngModel)]="movie">
+ <button type="button" (click)="searchMovies(movie)" class="btn btn-outline-success" [routerLink]="'/search'">Search</button>
+ <button class="btn btn-outline-success" [routerLink]="'/favourites'">Favourites</button>
+ </form>
+</nav>
+ -->
+
+<br>
+<div class ="container">
+<div class="row">
+<!-- <app-movieapp [routerLink]="['/movieapp']"></app-movieapp>
+ -->  <!-- <div class="col-md-6 col-lg-4" *ngFor="let movie of favourites"> -->
+    <!-- <div class="card">
+      <a>
+                            <img class="card-img-top img-fluid" src="https://image.tmdb.org/t/p/w500{{movies.poster_path}}">
+                            <div class="card-block">
+                                <h3 class="card-title">Movie: {{movies.original_title}}</h3><br>
+                                <h3 class="card-text">Release Date: {{movies.release_date}}</h3><br>
+                                <p class="card-text">Popularity:   {{movies.popularity}}</p><br>
+                                <p class="card-text">Vote Average:   {{movies.vote_average}}</p><br>
+                              <button (click)="add(movies)">Add</button>  -->
+    <!-- <a href="#" class="card text-center btn btn-secondary">Add</a> -->
+    <!-- <div class="card text-center" style="width: 20rem;">
+      <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image cap">
+      <br>
+      <div class="card-body">
+        <br>
+        <h6 class="card-title">Movie: {{movie.original_title}}</h6>
+        <br>
+        <h6 class="card-text">Release Date: {{movie.release_date}}</h6>
+        <h6 class="card-text">Popularity:   {{movie.popularity}}</h6>
+        <h6 class="card-text">Vote Average:   {{movie.vote_average}}</h6>
+        <a (click)="deleteMovie(movie)" class="btn btn-primary" href="/del">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+<div class="col-sm-6 col-md-4 col-lg-4 mt-4" *ngFor="let movie of favourites">
+                <div class="card card-inverse card-info">
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image cap">
+                    <div class="card-block">
+                        <figure class="profile profile-inline">
+                            <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"  class="profile-avatar" alt="">
+                        </figure><br>
+                        <h4 class="card-title">Movie: {{movie.original_title}}</h4>
+                        <div class="card-text">
+                        <h6>Release Date: {{movie.release_date}}</h6>
+                        <h6>Popularity:   {{movie.popularity}}</h6>
+                        <h6>Vote Average:   {{movie.vote_average}}</h6>
+                          
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                    <a (click)="deleteMovie(movie)" class="btn btn-primary" href="/del">Delete</a>
+                    <!-- <button (click)="add(movie)" class="btn btn-info btn-sm">Add to Favourite</button> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
