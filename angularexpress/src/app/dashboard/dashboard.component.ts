@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
 
   getPopularMovies(){
   	this.service.getPopularMovies().subscribe((movie=>{
-  		this.movie=movie.articles;
+  		this.movie=movie.results;
   		console.log(this.movie);
   	}))
   }

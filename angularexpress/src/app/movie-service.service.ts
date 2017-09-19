@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class MovieServiceService {
 private url='http://api.themoviedb.org/3/search/movie?api_key=87401d5afd72cb3cf8a20f611290d12b&query='; 
-private popularurl ='https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=f9b785283e1d41f69bb484d5461653b9';
+private popularurl ='https://api.themoviedb.org/3/movie/popular?api_key=87401d5afd72cb3cf8a20f611290d12b&language=en-US&page=1';
   constructor(private http:Http) { }
 // get movies from TMDB api
   getMovies(movie :string){

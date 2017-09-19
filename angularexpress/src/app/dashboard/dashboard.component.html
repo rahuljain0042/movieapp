@@ -26,16 +26,16 @@
 <div class="row">
 <div class="col-sm-6 col-md-4 col-lg-4 mt-4" *ngFor="let movie of movie">
                 <div class="card card-inverse card-info">
-                    <img class="card-img-top" src="{{movie.urlToImage}}" alt="Card image cap">
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image cap">
                     <div class="card-block">
                         <figure class="profile profile-inline">
-                            <img src="{{movie.urlToImage}}"  class="profile-avatar" alt="">
+                            <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"  class="profile-avatar" alt="">
                         </figure><br>
-                        <h4 class="card-title">Movie: {{movie.title}}</h4>
+                        <h4 class="card-title">Movie: {{movie.author}}</h4>
                         <div class="card-text">
-                        <h5>Release Date: {{movie.url}}</h5>
-                        <h5>Popularity:   {{movie.publishedAt}}</h5>
-                        <p>Vote Average:   {{movie.description}}</p>
+                        <h5>Release Date: {{movie.title}}</h5>
+                        <h5>Popularity:   {{movie.popularity}}</h5>
+                        <h5>Vote Average:   {{movie.vote_average}}</h5>
                           
                         </div>
                     </div>
