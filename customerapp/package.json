@@ -1,0 +1,33 @@
+{
+  "name": "customerapp",
+  "version": "1.0.0",
+  "description": "simple customer management app",
+  "main": "app.js",
+  "scripts": {
+    "test": " nyc mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "rahuljain0042"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "^2.5.7",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "mongoose": "^4.11.8",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "nyc": "^11.1.0",
+    "sinon": "*",
+    "supertest": "*"
+  },
+  "author": "rahuljain",
+  "license": "ISC"
+}
